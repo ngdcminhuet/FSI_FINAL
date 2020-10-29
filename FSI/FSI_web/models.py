@@ -11,7 +11,7 @@ class FSI_user(models.Model):
     password = models.CharField(max_length=255)
     full_name= models.CharField(max_length=255)
     email = models.EmailField()
-    access_token = models.CharField(max_length=255)
+    token = models.CharField(max_length=255)
     phone = models.IntegerField()
 
     def __str__(self):
